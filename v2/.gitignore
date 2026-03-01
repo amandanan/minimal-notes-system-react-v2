@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências
+/node_modules/
+
+# Build / Output do Vite
+/dist/
+/dist-ssr/
+
+# Arquivos de ambiente / variáveis sensíveis
+*.env
+*.local
+
+# Editor / IDE / Sistema Operacional
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache do Vite / npm / yarn
+/.vite/
+.cache/

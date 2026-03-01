@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+
+    <!-- Fonte estilo terminal -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Notas</h2>
+
+        <button onclick="criarPasta()">Nova Pasta</button>
+        <button onclick="criarPagina()">Nova Página</button>
+
+        <input type="text" placeholder="Buscar..." oninput="buscar(this.value)">
+
+        <div id="estrutura"></div>
+    </div>
+
+    <!-- Área principal -->
+    <div class="main">
+
+        <!-- Abas -->
+        <div class="tabs" id="tabs"></div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button onclick="salvar()">Salvar</button>
+            <button onclick="inserirImagem()">Inserir Imagem</button>
+            <button onclick="exportarArquivo()">Baixar Página</button>
+        </div>
+
+        <!-- Editor -->
+        <div id="editor" class="editor" contenteditable="true"></div>
+
+    </div>
+
+</div>
+
+<!-- JS externo -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

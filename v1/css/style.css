@@ -1,0 +1,228 @@
+/* =========================
+   MINIMAL DARK MODE
+========================= */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #121212;
+    color: #eaeaea;
+    font-family: 'Fira Code', monospace;
+    overflow: hidden;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 240px;
+    background: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    background: none;
+    border: none;
+    color: #4da3ff;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    padding: 4px 0;
+    text-align: left;
+}
+
+button:hover {
+    color: #82c4ff;
+}
+
+/* =========================
+   BUSCA
+========================= */
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin: 15px 0;
+    background: #101010;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #2a2a2a;
+    font-family: 'Fira Code', monospace;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #4da3ff;
+}
+
+/* =========================
+   PASTAS
+========================= */
+
+.folder {
+    padding: 4px 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+.folder:hover {
+    color: #ffffff;
+}
+
+.folder.active {
+    color: #4da3ff;
+}
+
+/* =========================
+   PÁGINAS
+========================= */
+
+.page {
+    padding: 3px 0 3px 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #aaaaaa;
+}
+
+.page:hover {
+    color: #ffffff;
+}
+
+.page.active {
+    color: #4da3ff;
+}
+
+/* =========================
+   EXCLUIR
+========================= */
+
+.delete-btn {
+    font-size: 11px;
+    color: #666;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #ff5c5c;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #121212;
+}
+
+/* =========================
+   ABAS
+========================= */
+
+.tabs {
+    display: flex;
+    padding: 8px 15px;
+    gap: 20px;
+    background: #121212;
+}
+
+.tab {
+    font-size: 13px;
+    color: #888;
+    cursor: grab;
+    display: flex;
+    gap: 8px;
+}
+
+.tab.active {
+    color: #ffffff;
+}
+
+.tab:hover {
+    color: #ffffff;
+}
+
+.close-tab {
+    font-size: 11px;
+    color: #555;
+    cursor: pointer;
+}
+
+.close-tab:hover {
+    color: #ff5c5c;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+    padding: 10px 20px;
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+}
+
+/* =========================
+   EDITOR
+========================= */
+
+.editor {
+    flex: 1;
+    padding: 40px;
+    outline: none;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    caret-color: #ffffff;
+    color: #eaeaea;
+}
+
+/* =========================
+   SCROLL MINIMAL
+========================= */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
