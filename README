@@ -41,7 +41,7 @@ Nesta versão, o projeto evoluiu para utilizar **componentes reutilizáveis**, *
 
 ## 📁 Estrutura do projeto
 
-```txt
+
 minimal-notes-system/
 ├─ v1/              # Versão original (JS puro)
 │  ├─ css/
@@ -62,7 +62,6 @@ minimal-notes-system/
 │  └─ .gitignore
 ├─ .gitignore
 └─ README.md
-```
 
 ---
 
@@ -70,26 +69,20 @@ minimal-notes-system/
 
 Clone o repositório:
 
-```bash
+
 git clone https://github.com/seu-usuario/nome-do-repo.git
 cd nome-do-repo
-```
+
 
 Instale as dependências:
 
-```bash
+
 npm install
-# ou
-yarn install
-```
+
 
 Inicie o servidor de desenvolvimento:
 
-```bash
 npm run dev
-# ou
-yarn dev
-```
 
 Abra o navegador no endereço exibido pelo Vite.
 
